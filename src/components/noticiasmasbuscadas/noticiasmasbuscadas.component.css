@@ -1,0 +1,86 @@
+.noticias-buscadas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .noticias-buscadas-container h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .noticia-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 250px;
+    margin: 15px;
+  }
+  
+  .noticia-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .noticia-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .noticia-content {
+    text-align: center;
+  }
+  
+  .noticia-content h2 {
+    font-size: 1.3em;
+    margin: 10px 0;
+  }
+  
+  .noticia-content p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .ver-mas-button {
+    background-color: #57d759;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ver-mas-button:hover {
+    background-color: #0056b3;
+  }
+  .form-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alineación de inicio para que la imagen esté alineada al inicio */
+    justify-content: center;
+    gap: 20px; /* Espacio entre el botón y el formulario */
+  }
+  
+  .menu-item {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a mano */
+    padding: 0; /* Sin padding */
+  }
+  
+  .side-logo {
+    width: 60px; /* Tamaño pequeño de la imagen */
+    margin-top: 5px; /* Ajusta este valor para bajar la imagen un poco más */
+  }  

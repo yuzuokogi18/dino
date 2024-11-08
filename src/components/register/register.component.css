@@ -1,0 +1,75 @@
+.form-wrapper {
+  display: flex;
+  align-items: flex-start; /* Alineación de inicio para que la imagen esté alineada al inicio */
+  justify-content: center;
+  gap: 20px; /* Espacio entre el botón y el formulario */
+}
+
+.menu-item {
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor a mano */
+  padding: 0; /* Sin padding */
+}
+
+.side-logo {
+  width: 60px; /* Tamaño pequeño de la imagen */
+  margin-top: 5px; /* Ajusta este valor para bajar la imagen un poco más */
+}
+
+.form-container {
+  border: 2px solid #008000;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  background-color: #FCFCFC;
+  text-align: center;
+}
+
+h2 {
+  color: #008000; 
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #008000; /* Borde verde en los campos de entrada */
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px; 
+}
+
+button[type="submit"] {
+  background-color: #fff;
+  color: #008000; 
+  padding: 10px 15px;
+  border: 2px solid #008000; 
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%; /* Botón ocupa todo el ancho */
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: rgb(207, 199, 199);
+  font-size: 0.9em;
+  margin-top: 5px;
+}

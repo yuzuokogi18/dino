@@ -1,0 +1,228 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border: 2px solid #9ccc65;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 110px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    font-size: 16px;
+    color: #4caf50;
+    background-color: transparent;
+    border: 2px solid #f9f9f9;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #83ce87;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: #4caf50;
+    cursor: pointer;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFCFC;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.user-icon:hover {
+    background-color: #83ce87;
+    color: #ffffff;
+}
+
+.edit-container {
+    border: 2px solid green;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px auto 0; 
+}
+
+h2 {
+    color: green;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se distribuyan en filas */
+    gap: 15px; /* Espacio entre las cards */
+    justify-content: space-around; /* Distribuye las cards horizontalmente */
+}
+
+.news-card {
+    flex: 1 1 calc(33.333% - 20px); /* Ancho de cada card para ocupar un tercio del espacio con márgenes */
+    max-width: 300px; /* Ancho máximo para que no crezca demasiado */
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.news-card h3 {
+    color: green;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.news-card p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: black;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
+.form-field {
+    margin-bottom: 15px; 
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #4caf50; 
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 7px; 
+    border: 1px solid #4caf50;
+    border-radius: 3px; 
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 14px;
+}
+
+.form-field textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: darkgreen; 
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    margin-top: 20px; 
+}
+
+button[type="submit"]:hover {
+    background-color: darkgreen; 
+}
+.form-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: 30px; /* Tamaño del contenedor del botón */
+    height: 30px; /* Tamaño del contenedor del botón */
+}
+
+.menu-item:hover {
+    background-color: #e0e0e0; /* Fondo ligero al hacer hover */
+    border-radius: 5px; /* Bordes redondeados al hacer hover */
+}
+
+.side-logo {
+    width: 20px; /* Ajusta el tamaño de la imagen */
+}

@@ -1,0 +1,105 @@
+
+
+<header class="header-container">
+    <div class="logo">
+        <img src="assets/logodino.png" alt="Dino News Logo" class="logo-image" />
+        <span class="logo-text">Dino News</span>
+    </div>
+    <nav class="nav-links">
+        <button routerLink="login" class="nav-button">Noticias Más Buscadas</button>
+        <button routerLink="login" class="nav-button">Recomendaciones</button>
+        <button routerLink="login" class="nav-button">Mi Contenido</button>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar" class="search-input" />
+        <button class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+    <div class="user-container">
+        <button class="user-icon">
+            <i class="fa fa-user"></i>
+        </button>
+    </div>
+</header>
+<div class="form-wrapper">
+    <button class="menu-item" routerLink="/micontenido">
+      <img src="assets/atras.png" alt="Volver" class="side-logo" />
+    </button>
+
+
+
+<div class="edit-container">
+    <h2>EDITAR NOTICIA</h2>
+    <div class="news-grid">
+        <div class="news-card" *ngFor="let noticia of noticias">
+            <h3>{{ noticia.titulo }}</h3>
+            <p><strong>{{ noticia.categoria_id }}</strong></p>
+            <p>{{ noticia.fecha_publicacion }}</p>
+            <p>Autor: {{ noticia.autor }}</p>
+            <p>Origen: {{ noticia.origen }}</p>
+            <p>Fuente: {{ noticia.fuente_publicacion }}</p>
+            <p>{{ noticia.descripcion_breve }}</p>
+            <p>{{ noticia.contenido }}</p>
+            <button (click)="editarNoticia(noticia)">Editar</button>
+        </div>
+    </div>
+
+    <div *ngIf="selectedNoticia">
+        <h3>Formulario de Edición</h3>
+        <form (ngSubmit)="actualizarNoticia()">
+            <div class="form-field">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" [(ngModel)]="selectedNoticia.titulo" name="titulo" required />
+            </div>
+
+            <div class="form-field">
+                <label for="descripcion">Descripción Breve:</label>
+                <input type="text" id="descripcion" [(ngModel)]="selectedNoticia.descripcion_breve" name="descripcion" required />
+            </div>
+
+            <div class="form-field">
+                <label for="contenido">Contenido:</label>
+                <textarea id="contenido" [(ngModel)]="selectedNoticia.contenido" name="contenido" required></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" [(ngModel)]="selectedNoticia.categoria_id" name="categoria" required>
+                    <option value="1">Tecnología</option>
+                    <option value="2">Salud</option>
+                    <option value="3">Deportes</option>
+                    <option value="4">Cultura</option>
+                    <option value="5">Política</option>
+                    <option value="6">Económicas</option>
+                    <option value="7">Científicas</option>
+                    <option value="8">Sociales</option>
+                    <option value="9">Educativos</option>
+                    <option value="10">Amorosos</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="fecha">Fecha de Publicación:</label>
+                <input type="date" id="fecha" [(ngModel)]="selectedNoticia.fecha_publicacion" name="fecha" required />
+            </div>
+
+            <div class="form-field">
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" [(ngModel)]="selectedNoticia.origen" name="origen" required />
+            </div>
+
+            <div class="form-field">
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" [(ngModel)]="selectedNoticia.autor" name="autor" required />
+            </div>
+
+            <div class="form-field">
+                <label for="fuente">Fuente de la Noticia:</label>
+                <input type="text" id="fuente" [(ngModel)]="selectedNoticia.fuente_publicacion" name="fuente" required />
+            </div>
+
+            <button type="submit">Actualizar Noticia</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.ver-mas-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    border-radius: 5px;
+    margin: 15px 0;
+    background-color: #f9f9f9; 
+  }
+  
+  .ver-mas-image {
+    width: 650px; 
+    height: auto; 
+    margin-right: 20px; 
+  }
+  
+  .ver-mas-text {
+    flex-grow: 1; 
+  }
+  
+  .ver-mas-text h2 {
+    font-size: 1.8em; 
+    margin: 0; 
+  }
+  
+  .ver-mas-text p {
+    font-size: 1.2em; 
+    margin: 5px 0; 
+  }
+  .form-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alineación de inicio para que la imagen esté alineada al inicio */
+    justify-content: flex-start; /* Cambiado para alinear a la izquierda */
+    gap: 20px; /* Espacio entre el botón y el formulario */
+  }
+  
+  .menu-item {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a mano */
+    padding: 0; /* Sin padding */
+  }
+  
+  .side-logo {
+    width: 60px; /* Tamaño pequeño de la imagen */
+    margin-top: 5px; /* Ajusta este valor para bajar la imagen un poco más */
+    margin-left: 11px; /* Margen negativo para mover la imagen más a la izquierda (ajusta este valor según sea necesario) */
+  }

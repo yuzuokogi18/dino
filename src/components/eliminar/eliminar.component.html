@@ -1,0 +1,41 @@
+<header class="header-container">
+    <div class="logo">
+        <img src="assets/logodino.png" alt="Dino News Logo" class="logo-image" />
+        <span class="logo-text">Dino News</span>
+    </div>
+    <nav class="nav-links">
+        <button routerLink="login" class="nav-button">Noticias Más Buscadas</button>
+        <button routerLink="login" class="nav-button">Recomendaciones</button>
+        <button routerLink="login" class="nav-button">Mi Contenido</button>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar" class="search-input" />
+        <button class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+    <div class="user-container">
+        <button class="user-icon">
+            <i class="fa fa-user"></i>
+        </button>
+    </div>
+</header>
+<div class="form-wrapper">
+    <button class="menu-item" routerLink="/micontenido">
+      <img src="assets/atras.png" alt="Volver" class="side-logo" />
+    </button>
+
+
+<div class="news-grid">
+    <div class="news-card" *ngFor="let noticia of noticias">
+        <h3>{{ noticia.titulo }}</h3>
+        <p><strong>Categoria:</strong> {{ noticia.categoria_id }}</p>
+        <p><strong>Fecha de Publicación:</strong> {{ noticia.fecha_publicacion }}</p>
+        <p><strong>Autor:</strong> {{ noticia.autor }}</p>
+        <p><strong>Origen:</strong> {{ noticia.origen }}</p>
+        <p><strong>Descripción Breve:</strong> {{ noticia.descripcion_breve }}</p>
+        <p><strong>Contenido:</strong> {{ noticia.contenido }}</p>
+        <p><strong>Fuente:</strong> {{ noticia.fuente_publicacion }}</p> 
+        <button (click)="eliminarNoticia(noticia.id)">Eliminar</button>
+    </div>
+</div>

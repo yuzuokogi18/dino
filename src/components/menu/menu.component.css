@@ -1,0 +1,63 @@
+.news-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin: 20px; /* Margen alrededor de la sección de noticias */
+  }
+  
+  .news-item {
+    background-color: #f9f9f9; /* Fondo claro para las tarjetas */
+    border: 2px solid #28a745; /* Borde verde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+    transition: transform 0.2s; /* Transición para el efecto de hover */
+    width: calc(33.33% - 20px); /* Ancho de las tarjetas (3 por fila con espacio) */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  }
+  
+  .news-item h4 {
+    font-size: 1.5em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #333; /* Color del texto del título */
+  }
+  
+  .news-item p {
+    margin: 5px 0; /* Espacio entre párrafos */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+  }
+  
+  .news-item strong {
+    color: #007bff; /* Color del texto en negrita (puedes cambiarlo) */
+  }
+  .form-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alineación de inicio para que la imagen esté alineada al inicio */
+    justify-content: flex-start; /* Cambiado para alinear a la izquierda */
+    gap: 20px; /* Espacio entre el botón y el formulario */
+  }
+  
+  .menu-item {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a mano */
+    padding: 0; /* Sin padding */
+  }
+  
+  .side-logo {
+    width: 60px; /* Tamaño pequeño de la imagen */
+    margin-top: 5px; /* Ajusta este valor para bajar la imagen un poco más */
+    margin-left: 60px; /* Margen negativo para mover la imagen más a la izquierda (ajusta este valor según sea necesario) */
+  }
+  
+  .section-title {
+    color: #28a745; /* Color verde para el texto */
+    font-size: 2em; /* Tamaño de fuente más grande */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    text-align: center; /* Centrar el texto */
+  }
+  

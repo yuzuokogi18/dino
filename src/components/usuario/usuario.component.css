@@ -1,0 +1,251 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 2px solid #9ccc65;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 110px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-button {
+    font-size: 16px;
+    color: #4caf50;
+    background-color: transparent;
+    border: 2px solid #f9f9f9;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #83ce87;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: #4caf50;
+    cursor: pointer;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFCFC;
+    color: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.user-icon:hover {
+    background-color: #83ce87;
+    color: #ffffff;
+}
+
+
+.container {
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    background-color: #00aa00;
+    color: white;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+ 
+  .news-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .news-item {
+    display: flex;
+    border: 2px solid #00aa00;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .featured-news {
+    width: 920px; 
+  }
+  
+  .featured-news .news-image {
+    width: 450px; 
+    height: auto;
+    margin-right: 20px; 
+  }
+  
+  .news-image {
+    width: 350px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .news-content {
+    flex: 1;
+  }
+  
+  .news-content h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .news-content p {
+    margin: 10px 0;
+  }
+  
+  
+  .featured-news .news-content h4 {
+    font-size: 24px; 
+  }
+  
+  .featured-news .news-content p {
+    font-size: 18px;
+  }
+  
+  .featured-news .read-more {
+    background-color: #00aa00;
+    color: white;
+    border: none;
+    padding: 15px 30px; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .read-more {
+    background-color: #00aa00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: flex-start; 
+    margin-top: 30px; 
+  }
+  
+  .main-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.menu-container {
+    width: 200px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: Arial, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-button {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 8px solid white;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: darkgreen;
+}
+
+.menu-item {
+    padding: 10px 15px;
+    text-align: left;
+    color: white;
+    background-color: green;
+    border: none;
+    border-bottom: 10px solid white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+.menu-item:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.menu-item:hover {
+  background-color: darkgreen;
+}

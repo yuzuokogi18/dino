@@ -1,0 +1,19 @@
+
+<app-header></app-header>
+<h2 class="section-title">Noticias Tecnologías</h2> <!-- Título agregado aquí -->
+<div class="form-wrapper">
+  <button class="menu-item" routerLink="/inicio">
+    <img src="assets/atras.png" alt="Volver" class="side-logo" />
+  </button>
+
+  <div class="news-section">
+    <div *ngFor="let noticia of noticiasDeTecnologia" class="news-item">
+      <h4>{{ noticia.titulo }}</h4>
+      <p><strong>Descripción Breve:</strong> {{ noticia.descripcion_breve }}</p>
+      <p><strong>Contenido:</strong> {{ noticia.contenido }}</p>
+      <p><strong>Autor:</strong> {{ noticia.autor }}</p>
+      <p><strong>Fecha de Publicación:</strong> {{ noticia.fecha_publicacion | date: 'longDate' }}</p>
+      <p><strong>Fuente de Publicación:</strong> {{ noticia.fuente_publicacion }}</p>
+    </div>
+  </div>
+  

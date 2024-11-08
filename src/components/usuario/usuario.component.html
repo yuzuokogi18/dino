@@ -1,0 +1,82 @@
+<header class="header-container">
+    <div class="logo">
+        <img src="assets/logodino.png" alt="Dino News Logo" class="logo-image" />
+        <button [routerLink]="'/usuario/home'" class="nav-button">Dino News</button>
+    </div>
+    <nav class="nav-links">
+        <button [routerLink]="'/usuario/noticiasmasbuscadas'" class="nav-button">Noticias Más Buscadas</button>
+        <button [routerLink]="'/usuario/recomendaciones'" class="nav-button">Recomendaciones</button>
+        <button [routerLink]="'/usuario/micontenido'" class="nav-button">Mi Contenido</button>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar" class="search-input" [(ngModel)]="tituloBuscado" />
+      <button class="search-button" (click)="buscarNoticias()"> <!-- Cambia aquí para llamar al método correcto -->
+          <i class="fa fa-search"></i>
+      </button>
+  </div>
+  
+</header>
+
+
+
+<div class="main-container">
+    <!-- Menú lateral -->
+    <div class="menu-container">
+        <div class="menu-button">NEWS</div>
+        <button class="menu-item" [routerLink]="['/usuario/menu']">Tecnologías</button>
+        <div class="menu-item">Políticas</div>
+        <div class="menu-item">Deportivas</div>
+        <div class="menu-item">Económicas</div>
+        <div class="menu-item">Científicas</div>
+        <div class="menu-item">Sociales</div>
+        <div class="menu-item">Educativos</div>
+        <div class="menu-item">Amorosos</div>
+        <div class="menu-item">Locales</div>
+        <div class="menu-item">Culturales</div>
+        <div class="menu-item">Salud</div>
+        <div class="menu-item">Científicas</div>
+        <div class="menu-item">Deportivas</div>
+    </div>
+  
+    <div *ngIf="noticias.length > 0">
+      <div *ngFor="let noticia of noticias" class="news-item">
+        <img src="assets/nt.jpg" alt="Imagen de noticia" class="news-image">
+        <div class="news-content">
+          <h4>{{ noticia.titulo }}</h4>
+          <p>{{ noticia.descripcion_breve }}</p>
+          <button routerLink="vermas" class="read-more">
+            SEGUIR LEYENDO
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div *ngIf="noticias.length === 0">
+      <p>No se encontraron noticias para "{{ tituloBuscado }}"</p>
+    </div>
+    
+    <div class="news-section">
+      <div class="news-item featured-news">
+        <img src="assets/nt.jpg" alt="Noticia 1" class="news-image">
+        <div class="news-content">
+          <h4>Ofrecen presupuesto sin fobias partidistas; Ramírez Cuéllar: prioridad, bajar el déficit fiscal</h4>
+          <p>Para asignar el Presupuesto 2025 habrá un debate público con todos los actores sociales y económicos del país, aseguró Alfonso Ramírez Cuéllar, vicecoordinador de la diputación morenista.</p>
+          <button routerLink="vermas" class="read-more">
+            SEGUIR LEYENDO
+          </button>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="assets/nt.jpg" alt="Noticia 2" class="news-image">
+        <div class="news-content">
+          <h4>Ofrecen presupuesto sin fobias partidistas; Ramírez Cuéllar: prioridad, bajar el déficit fiscal</h4>
+          <p>Para asignar el Presupuesto 2025 habrá un debate público con todos los actores sociales y económicos del país, aseguró Alfonso Ramírez Cuéllar, vicecoordinador de la diputación morenista.</p>
+          <button routerLink="vermas" class="read-more">
+            SEGUIR LEYENDO
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-cart></app-cart>
+  <app-footer></app-footer>

@@ -1,0 +1,58 @@
+<header class="header-container">
+    <div class="logo">
+        <img src="assets/logodino.png" alt="Dino News Logo" class="logo-image" />
+        <button routerLink="/usuario" class="nav-button">Dino News</button>
+
+
+        
+    </div>
+    <nav class="nav-links">
+        <button routerLink="login" class="nav-button">Noticias Más Buscadas</button>
+        <button routerLink="login" class="nav-button">Recomendaciones</button>
+        <button routerLink="login" class="nav-button">Mi Contenido</button>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar" class="search-input" />
+        <button class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+    <div class="user-container">
+        <button class="user-icon">
+            <i class="fa fa-user"></i>
+        </button>
+    </div>
+</header>
+
+<div class="container">
+    <h2 class="opciones-header">Mis Opciones</h2>
+    <div class="options">
+        <div class="option">
+            <img src="assets/agregar.png" alt="Agregar Noticia Icon" class="icon" />
+            <button [routerLink]="['/usuario/micontenido/agregar']" class="nav-button">Agregar</button>
+
+        </div>
+        <div class="option">
+            <img src="assets/editar.png" alt="Editar Noticia Icon" class="icon" />
+            <button [routerLink]="['/usuario/micontenido/editar']" class="nav-button">Editar</button>
+        </div>
+        <div class="option">
+            <img src="assets/eliminar.png" alt="Eliminar Noticia Icon" class="icon" />
+            <button [routerLink]="['/usuario/micontenido/eliminar']" class="nav-button">Eliminar</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="contenido">
+    <h1 class="opciones-header">Mi Contenido</h1>
+    <div class="grid">
+        <div class="tarjeta" *ngFor="let noticia of noticias">
+            <div class="contenido-texto">
+                <h2>{{ noticia.titulo }}</h2>
+                <p>{{ noticia.descripcion_breve }}</p>
+                <button class="boton">SEGUIR LEYENDO</button>
+            </div>
+        </div>
+    </div>
+</div>
